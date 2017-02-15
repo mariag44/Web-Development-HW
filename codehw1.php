@@ -22,7 +22,7 @@ echo "Beer Bottle Song <p>" ;
 
 for ($beer =4; $beer >= 1; $beer--) 
 
-echo "$beer bottles of beer on the wall, $beer bottles of beer on the wall, you take one down, pass it around, " . ($beer-1) . " bottles of beer on the wall. <br>";
+echo "$beer bottles of beer on the wall, $beer bottles of beer on the wall, you take one down, pass it around, " . ($beer--) . " bottles of beer on the wall. <br>";
 
 echo "<br>";
 
