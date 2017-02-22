@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h1> Challenge 1: ISBN 10 Validator </h1>
+<h1> Challenge 1: Books</h1>
 
 </head>
 <style> 
@@ -116,17 +116,17 @@ echo build_table($books);
 <?php
 $heads = 0;
 $flip = 0;
-$flipt = 4;
 
+
+
+cointoss(4);
+
+function cointoss($flipt) { 
 $him = "<img src =http://random-ize.com/coin-flip/us-penny/2011-us-penny.jpg>";
 $tim = "<img src =http://awesomemoney101.weebly.com/uploads/2/3/7/4/23749064/3347211_orig.jpeg>";
-
-
-
-function cointoss($heads, $flip, $flipt) { 
-
+global $heads, $flip; 
 while ($heads < $flipt) { 
-$heads = mt_rand(0,1);
+$headsup = mt_rand(0,1);
 $flip++; 
 if ($headsup) {
 $heads++;
